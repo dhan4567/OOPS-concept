@@ -17,7 +17,7 @@ final class Parent {
 //class Child extends Parent {
 
 //    public void displayName() {
-//        System.out.println("my name is tushar");
+//        System.out.println("my name is omkar");
 //    }
 
 //}

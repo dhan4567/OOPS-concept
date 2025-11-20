@@ -6,24 +6,26 @@ Abstract classes may have methods without implementation and must be implemented
 
 */
 
-package Abstraction;
+package com.abstraction;
 
 
-abstract class Animal{
+abstract class Animal {
     abstract void makeSound(); //concrete method
 
-    void breath(){
+    void breath() {
         System.out.println("animals take a long breath");
     }
 
 }
-class Cat extends Animal{
+
+class Cat extends Animal {
     @Override
-    void makeSound(){
+    void makeSound() {
         System.out.println("cat makes sound as meow");
     }
 
 }
+
 public class Hidden {
     public static void main(String[] args) {
         Animal abs = new Cat();

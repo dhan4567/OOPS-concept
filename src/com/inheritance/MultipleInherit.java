@@ -6,33 +6,35 @@ This ambiguity is the reason Java does not support multiple inheritance with cla
 but we can achieve multiple inheritance by using interface concept
 */
 
-package Inheritance;
+package com.inheritance;
 
-interface a{
-    default void display(){
+interface a {
+    default void display() {
         System.out.println("aaaaaaaaaaaaaaa");
     }
 
 }
-interface b{
-    default void display(){
+
+interface b {
+    default void display() {
         System.out.println("bbbbbbbbbbbbbbbb");
     }
 
 }
 
-class c implements a,b {
+class c implements a, b {
     @Override
-    public  void display(){
+    public void display() {
         a.super.display();
         b.super.display();
         System.out.println("class c display");
 
     }
 }
-public class MultipleInherit{
+
+public class MultipleInherit {
     public static void main(String[] args) {
-        c obj =new c();
+        c obj = new c();
         obj.display();
     }
 

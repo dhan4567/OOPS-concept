@@ -1,28 +1,32 @@
 //Method Overriding:= Achieved via inheritance (run time polymorphism) where multiple methods having same name with same method parameters
 
-package Polymorphism;
+package com.polymorphism;
 
-class Animal{
-    void makeSound(){
+class Animal {
+    void makeSound() {
         System.out.println("animal makes sound");
     }
-    void breath(String type){
+
+    void breath(String type) {
         System.out.println("some animals takes long breath");
 
     }
 
 }
+
 class Dog extends Animal {
-    void makeSound(){
+    void makeSound() {
         System.out.println("dog makes sound");
 
     }
-    void breath(String type){
+
+    void breath(String type) {
         System.out.println("some animals takes deep breath");
 
     }
 
 }
+
 public class RunTimeAnimal {
     public static void main(String[] args) {
         Dog d = new Dog();

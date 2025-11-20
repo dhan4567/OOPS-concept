@@ -1,4 +1,4 @@
-//interface also not able to create object,but reference of interface can exist, methods that exist inside the interface those all are abstract methods and interface should be forcefully apply and execute those methods inside the concrete implementation
+//interface also not able to create object,because interface fields and methods are static,final and public ,but reference of interface can exist, methods that exist inside the interface those all are abstract methods and interface should be forcefully apply and execute those methods inside the concrete implementation
 
 package com.interfac;
 
